@@ -6,4 +6,4 @@ def test_error_login(page: Page) -> None:
     login_page = LoginPage(page)
     login_page.navigate()
     login_page.login("", "")
-    expect(login_page.error).to_be_visible()
+    expect(login_page.error).to_have_text("Epic sadface: Username is required")
