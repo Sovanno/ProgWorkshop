@@ -124,7 +124,7 @@ invalid_booking_data = [
             "checkin": "2024-01-01",
             "checkout": "2024-01-07"
         },
-        None: None
+        None: ""
     },
     {
         "firstname": "Глен",
@@ -135,7 +135,7 @@ invalid_booking_data = [
         "additionalneeds": "Breakfast"
     },
     {
-        "firstname": "Розитта",
+        "": "Розитта",
         "lastname": "Капоне",
         "totalprice": 1241,
         "depositpaid": True,
