@@ -34,6 +34,6 @@ def test_create_booking_invalid(playwright: Playwright, booking_data):
     api = BookingAPI(request_context)
 
     response = api.create_booking(booking_data)
-    assert response.status == 400 or response.status == 422 or response.status == 500, f"Expected status code 400 or 422, got {response.status}"
+    assert response.status == 400 or response.status == 422, f"Expected status code 400 or 422, got {response.status}"
 
     request_context.dispose()

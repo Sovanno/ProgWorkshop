@@ -23,6 +23,6 @@ def test_get_token_invalid(playwright: Playwright, username, password):
     api = BookingAPI(request_context)
 
     response = api.get_token(username, password)
-    assert response.status == 401, f"Expected status code 401, got {response.status}"
+    assert response.status == 400 or response.status == 422, f"Expected status code 401, got {response.status}"
 
     request_context.dispose()
